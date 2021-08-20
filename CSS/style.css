@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Oxygen&display=swap');
+
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.headSection {
+    background-color: #2A538B;
+    padding: 30px 100px !important;
+}
+.headSection img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.headSection h1 {
+    font-size: 45px;
+}
+.headSection p {
+    font-size: 25px;
+}
+.infoSection {
+    padding: 30px 100px !important;
+}
+.infoSection .profileSection .profile h3,
+.infoSection .profileSection .education h3,
+.infoSection .profileSection .contact h3,
+.infoSection .experienceSection .experience h3,
+.infoSection .experienceSection .skills h3 {
+    color: #2A538B;
+}
+.pro {
+    position: relative;
+}
+.pro::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.3rem;
+    width: 5rem;
+    height: 4px;
+    background-color: #2A538B;
+}
+.provivy {
+    position: relative;
+}
+.provivy::after {
+    content: '';
+    position: absolute;
+    left: 2%;
+    bottom: -0.3rem;
+    width: 10rem;
+    height: 4px;
+    background-color: #fff;
+}
+.infoSection .profileSection .contact ul {
+    list-style: none;
+}
+.infoSection .profileSection .contact a,
+.infoSection .experienceSection .hng a {
+    text-decoration: none;
+}
+.infoSection .experienceSection .hng img {
+    width: 3rem;
+    border-radius: 50%;
+}
+
+
+@media (max-width: 768px) {
+    .infoSection,
+    .headSection {
+        padding: 30px 20px !important;
+    }
+    .headSection h1 {
+        font-size: 20px;
+    }
+    .headSection p {
+        font-size: 15px;
+    }
+    .headSection img {
+        width: 7rem;
+        height: 7rem;
+    }
+    .provivy::after {
+        width: 5rem;
+    }
+    .infoSection .experienceSection {
+        margin: 0 !important;
+    }
+}
